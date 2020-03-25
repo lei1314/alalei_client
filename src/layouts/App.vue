@@ -2,9 +2,6 @@
 	<div id="app">
 		<loading v-if="$store.state.bLoading" />
 		<Header v-if="$store.state.bNav" />
-		<!-- <transition enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutRight">
-			<router-view  style="position: absolute;left:0;top:0"></router-view>
-		</transition> -->
 		<transition name="slide-fade">
 			<router-view />
 		</transition>
@@ -30,12 +27,22 @@
 			Footer,
 			loading
 		},
+		mounted() {
+			
+			  // this.$toast({
+			  // this.$toast('提示内容')
+			
+		},
+		methods: {
+			
+		},
+		
 		watch: {
 			$route: { //路由监听，属性检测
 				handler(nextValue, PrevValue) {
 					// console.log('路由变化了', nextValue);
 					let path = nextValue.path;
-					if (/follow|find/.test(path)) { //home follow column
+					if (/follow|find|car/.test(path)) { //home follow column
 						// this.$root.bNav = false;
 						// this.$root.bFoot = true;
 						this.$store.commit('UPDATE_NAV',false)

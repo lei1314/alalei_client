@@ -11,7 +11,6 @@
 					:index="index"
 					api-name="column"
 				/>
-		
 		</div>
 		<Footer/>
 	</div>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Nav />
+		<Nav/>
 		<div class="detail"  v-if="detail.title">
 			<div class="content">
 				<div class="header clear">
@@ -31,7 +31,6 @@
 		props: {},
 		data() {
 			return {
-			
 			}
 		},
 		components: {
@@ -40,18 +39,9 @@
 			UcToolbar
 		},
     mounted() {
-   //    this.$axios({
-   //      url:`/api/goods/${this.$route.query.apiName}/${this.$route.params._id}`,
-   //    }).then(
-   //      res=>{
-			// // console.log(res.data.data.detail.auth)
-			// this.detail = res.data.data.detail
-			// }
-   //    )
 	let apiname=this.$route.query.apiName;
 	let _id=this.$route.params._id;
 	this.$store.dispatch(`detail/${this.$types.DETAIL}`,{apiname,_id})
-	// console.log(mapState('detail',['detail']))
     },
 	computed:mapState('detail',['detail']),
     updated() {},

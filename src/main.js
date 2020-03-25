@@ -28,6 +28,12 @@ import { Swipe, SwipeItem } from 'vue-swipe';
 Vue.component('swipe',Swipe)  
 Vue.component('swipe-item',SwipeItem) 
 
+//引入element-ui配置
+import './plugins/element-ui'
+
+
+//引入vant配置
+import vant from './plugins/vant'
 
 // 获取本地，同步vuex
 let local = window.localStorage.getItem('user');

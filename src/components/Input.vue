@@ -40,10 +40,13 @@
   	position: relative;border-bottom: 1px solid #e5e7e8;
   }
   .lifirst input {
-  	padding-left: 1.24rem;
-  	width: 4.54rem;
-  	height: 100%;
-  	font-size: 0.4rem;
+		text-indent: .4rem;
+		color: #939AA3;
+		font-size: .2rem;
+		padding-left: 1.24rem;
+		width: 4.54rem;
+		height: 100%;
+		font-size: 0.4rem;
   }
   
   .lifirst span {

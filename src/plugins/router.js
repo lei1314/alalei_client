@@ -25,6 +25,8 @@ import Subject from '@/components/Subject.vue'
 // 統計圖
 
 import Cropuis from '@/pages/Cropuis.vue'
+// 购物车
+import Car from '@/pages/Car.vue'
 // 地圖
 import Map from '@/pages/Map.vue'
 import Map2 from '@/pages/Map2.vue'
@@ -47,6 +49,8 @@ let routes = [
 	{path: '/home',component: Home,},
 	// 用户
 	{path: '/user',component: User,},
+	// 购物车
+	{path: '/car',component: Car,},
 	// 关注
 	{path: '/follow',component: Follow},
 	{path: '/find',component: (r) => {require(['../pages/Find.vue'], r)}},
